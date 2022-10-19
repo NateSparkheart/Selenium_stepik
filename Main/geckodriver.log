@@ -1,0 +1,25 @@
+1658005124062	geckodriver	INFO	Listening on 127.0.0.1:54341
+1658005127101	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54342" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\kappa\\AppData\\Local\\Temp\\rust_mozprofileaXMz1w"
+1658005127373	Marionette	INFO	Marionette enabled
+1658005127377	Marionette	INFO	Listening on port 54351
+WebDriver BiDi listening on ws://localhost:54342
+Read port: 54351
+1658005127568	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\kappa\\AppData\\Local\\Temp\\rust_mozprofileaXMz1w\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:54342/devtools/browser/7f563fa1-ea18-49a5-abc9-59b98e72cdef
+JavaScript warning: https://stepik.azureedge.net/static/frontend-build/vendor.js?v=1657551192, line 6289: unreachable code after return statement
+JavaScript warning: https://mc.yandex.ru/metrika/tag.js, line 18: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://stepik.azureedge.net/static/frontend-build/vendor.js?v=1657551192, line 6105: Error: Expected: '<assignment:568645>' to be present in the adapter provided payload, but it was not found.
+1658005141996	Marionette	INFO	Stopped listening on port 54351
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1658005810179	geckodriver	INFO	Listening on 127.0.0.1:54524
+1658005813224	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54525" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\kappa\\AppData\\Local\\Temp\\rust_mozprofileebfdD7"
+1658005813464	Marionette	INFO	Marionette enabled
+1658005813468	Marionette	INFO	Listening on port 54535
+WebDriver BiDi listening on ws://localhost:54525
+Read port: 54535
+1658005813664	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\kappa\\AppData\\Local\\Temp\\rust_mozprofileebfdD7\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:54525/devtools/browser/8af627f2-fa73-4ba1-a95c-de23159dd0d2
+JavaScript error: http://selenium1py.pythonanywhere.com/ru/, line 374: ReferenceError: oscar is not defined
+1658005815981	Marionette	INFO	Stopped listening on port 54535
