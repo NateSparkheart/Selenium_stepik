@@ -14,7 +14,7 @@ def browser():
 
 @pytest.fixture(autouse=True)
 def prepare_data():
-    print("\nГотовим данные для каждого теста по умаочанию (автоюз фикстура)")
+    print("\nГотовим данные для каждого теста по умолчанию (автоюз фикстура)")
 
 class TestMainPage1():  # вызываем фикстуру в тесте, передав ее как параметр
     def test_guest_should_see_login_link(self, browser):
