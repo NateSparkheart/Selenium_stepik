@@ -22,3 +22,4 @@ alert = browser.switch_to.alert
 alert_text = alert.text
 addToClipBoard = alert_text.split(': ')[-1]
 pyperclip.copy(addToClipBoard)
+print(addToClipBoard)
