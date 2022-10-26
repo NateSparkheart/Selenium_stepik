@@ -1,4 +1,3 @@
-import time
 import math
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -13,9 +12,8 @@ price = WebDriverWait(browser, 12).until(EC.text_to_be_present_in_element((By.ID
 button = browser.find_element(By.ID, "book").click()
 
 x = browser.find_element(By.ID, "input_value").text
-answer_area = browser.find_element(By.ID, "answer").send_keys(math.log(abs(12*math.sin(int(x)))))
-
-solve_button = browser.find_element(By.ID, "solve").click()
+browser.find_element(By.ID, "answer").send_keys(str(math.log(abs(12*math.sin(int(browser.find_element(By.ID, 'input_value').text))))))
+browser.find_element(By.ID, "solve").click()
 
 # Копирование числа из алерта в буфер обмена
 alert = browser.switch_to.alert
@@ -23,3 +21,4 @@ alert_text = alert.text
 addToClipBoard = alert_text.split(': ')[-1]
 pyperclip.copy(addToClipBoard)
 print(addToClipBoard)
+browser.quit()
