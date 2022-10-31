@@ -1,10 +1,13 @@
-import time
+import unittest
 
-from selenium import webdriver
 
-browser = webdriver.Chrome()
-browser.get('http://suninjuly.github.io/explicit_wait2.html')
-browser.execute_script('window.open("https://www.google.com");')
-time.sleep(5)
+class TestAbs(unittest.TestCase):
+    def test_abs1(self):
+        self.assertEqual(abs(-42), 42, "Should be absolute value of a number")
 
-browser.quit()
+    def test_abs2(self):
+        self.assertEqual(abs(-42), -42, "Should be absolute value of a number")
+
+
+if __name__ == "__main__":
+    unittest.main()
